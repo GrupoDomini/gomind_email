@@ -35,7 +35,7 @@ def enviar_email(
         <p>Registramos a conclusão do {RPA} com sucesso! Verifique o resultado do processo em anexo.</p>
 
         <p>
-            <img src="https://gdomini365-my.sharepoint.com/personal/mia_gomind_com_br/Documents/img/mail_suc.png"></img>
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbufeF-4PXZebHe96f1YN0sxQmt1MdAMXgMwY874rnJcBlO8gRaqXM6bZinvwhxYztde5jzdRS0JL8lRkXL6qMzpeIszA=w1358-h654"></img>
         </p>
 
         Att, <b>Mia - Go Mind</b><br>
@@ -52,7 +52,7 @@ def enviar_email(
         <p>Código de Referência: gosppt{mac_address}.</p>
         
         <p>
-            <img src="https://gdomini365-my.sharepoint.com/personal/mia_gomind_com_br/Documents/img/mail_erro.png"></img>
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZ6uL64_IBGxPoVYsPPR3166Rc7R2bjwvfru5896_VffF0DgL8gT6eS12YTAkCmK8kp6W40uMXRWA0GoSfFWYFjiPjF=w803-h654"></img>
         </p>
 
         Att, <b>Mia - Go Mind</b><br>

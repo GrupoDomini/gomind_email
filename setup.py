@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name="gomind_email",
     python_requires=">=3.6",
-    version="0.0.1",
+    version="0.0.2",
     description="GoMind email sender service",
     url="https://github.com/GrupoDomini/gomind_email.git",
     author="JeffersonCarvalhoGD",
