@@ -28,37 +28,85 @@ def enviar_email(
     try:
         """Corpo do e-mail"""
         sucesso = f"""
-        <center>
-        <p>Prezados,</p>
-        <p><i>Esta é uma mensagem automática da <b>Mia.</b></i></p>
-        
-        <p>Registramos a conclusão do {RPA} com sucesso! Verifique o resultado do processo em anexo.</p>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td bgcolor="#e8e8e8" style="padding: 10px 0 10px 0;">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="700" style="border-collapse: collapse;">
+                            
+                            <tr>
+                                <td bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaxBHeQ0H3I8COQxjjLxnCNfqXhm42iPPHd8FoKJXqCQ-YUny_BUwdb1rq1QymgV_Rl6QhfiBt1Gy4uwJQpnPZ3oGH63g=w1366-h607" alt="Go Mind" max-width="100%" height="auto" style="display: block; margin-bottom: 40px;"/>
+                                        </tr>
 
-        <p>
-            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbufeF-4PXZebHe96f1YN0sxQmt1MdAMXgMwY874rnJcBlO8gRaqXM6bZinvwhxYztde5jzdRS0JL8lRkXL6qMzpeIszA=w1358-h654"></img>
-        </p>
-
-        Att, <b>Mia - Go Mind</b><br>
-        Departamento de Tecnologia<br>
-        <a href='https://www.gomind.com.br' title='Unlimited Growth'>www.gomind.com.br</a>
-        </center>
+                                        <tr>
+                                            <td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px; text-align: center; padding-top: 50px">
+                                                <b>Olá! Esta é uma mensagem automática da Mia.</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 25px; text-align: center;">
+                                                Registramos a conclusão do {RPA} com sucesso! Verifique o resultado do processo em anexo.
+                                                <br/>
+                                                Código de Referência: <b style="color: #13B2A3;">gosppt{mac_address}</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="https://www.gomind.com.br">
+                                                    <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbz7cph3IXX6fWznlmRztsmDSqN-yzr0pgyEaLa6eqGg-jIYmUcd5Tvaz_8LxeX5O3dZ8zcq_Hsw4oH0kml5J3GHTUx=w1366-h607" alt="Go Mind" width="100%" height="auto" style="display: block;" />
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
         """
 
         erro = f"""
-        <center>
-        <p>Prezados,</p>
-        <p><i>Esta é uma mensagem automática da <b>Mia.</b></i></p>
-        Registramos erro durante execução do {RPA}.<br>
-        <p>Código de Referência: gosppt{mac_address}.</p>
-        
-        <p>
-            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZ6uL64_IBGxPoVYsPPR3166Rc7R2bjwvfru5896_VffF0DgL8gT6eS12YTAkCmK8kp6W40uMXRWA0GoSfFWYFjiPjF=w803-h654"></img>
-        </p>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td bgcolor="#e8e8e8" style="padding: 10px 0 10px 0;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="700" style="border-collapse: collapse;">
+                        
+                        <tr>
+                            <td bgcolor="#ffffff">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaxBHeQ0H3I8COQxjjLxnCNfqXhm42iPPHd8FoKJXqCQ-YUny_BUwdb1rq1QymgV_Rl6QhfiBt1Gy4uwJQpnPZ3oGH63g=w1366-h607" alt="Go Mind" max-width="100%" height="auto" style="display: block; margin-bottom: 40px;"/>
+                                    </tr>
 
-        Att, <b>Mia - Go Mind</b><br>
-        Departamento de Tecnologia<br>
-        <a href='https://www.gomind.com.br' title='Unlimited Growth'>www.gomind.com.br</a>
-        </center>
+                                    <tr>
+                                        <td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px; text-align: center; padding-top: 50px">
+                                            <b>Olá! Esta é uma mensagem automática da Mia.</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 20px; line-height: 25px; text-align: center;">
+                                            Registramos <b style="color: #13B2A3;">erro</b> durante execução do {RPA}.
+                                            <br/>
+                                            Código de Referência: <b style="color: #13B2A3;">gosppt{mac_address}</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="https://www.gomind.com.br">
+                                                <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbz7cph3IXX6fWznlmRztsmDSqN-yzr0pgyEaLa6eqGg-jIYmUcd5Tvaz_8LxeX5O3dZ8zcq_Hsw4oH0kml5J3GHTUx=w1366-h607" alt="Go Mind" width="100%" height="auto" style="display: block;" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
         """
 
         # Endereços
