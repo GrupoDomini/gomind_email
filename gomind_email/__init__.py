@@ -69,11 +69,11 @@ def enviar_email(
 
         # Assunto da mensagem
         if result:
-            msg["Subject"] = "Go Mind | Informativo RPA - Sucesso"
+            msg["Subject"] = f"Go Mind | Informativo RPA '{RPA}'- Sucesso"
             msg.attach(MIMEText(sucesso, "html"))
         else:
             msg["Cco"] = "suporte@gomind.com.br"
-            msg["Subject"] = "Go Mind | Informativo RPA - Erro"
+            msg["Subject"] = f"Go Mind | Informativo RPA '{RPA}' - Erro"
             msg.attach(MIMEText(erro, "html"))
 
         # Anexo
