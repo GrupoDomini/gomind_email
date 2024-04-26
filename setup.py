@@ -3,8 +3,8 @@ from setuptools import setup
 setup(
     name="gomind_email",
     python_requires=">=3.6",
-    version="0.0.2",
-    description="GoMind email sender service",
+    version="0.0.3",
+    description="GoMind email sender service. RPA Name inside email's subject",
     url="https://github.com/GrupoDomini/gomind_email.git",
     author="JeffersonCarvalhoGD",
     author_email="jefferson.carvalho@grupodomini.com",
