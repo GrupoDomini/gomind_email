@@ -77,16 +77,16 @@ def enviar_email(
             msg.attach(MIMEText(erro, "html"))
 
         # Anexo
-        if result:
-            attachment = open(file_path, "rb")  # Local do arquivo
-            anexo = "RPA_resultado.xlsx"  # Nome e extensão do arquivo em anexo
+        # if result:
+        #     attachment = open(file_path, "rb")  # Local do arquivo
+        #     anexo = "RPA_resultado.xlsx"  # Nome e extensão do arquivo em anexo
 
-            part = MIMEBase("application", "octet-stream")
-            part.set_payload((attachment).read())
-            encoders.encode_base64(part)
-            part.add_header("Content-Disposition", "attachment; filename= %s" % anexo)
-            msg.attach(part)
-            attachment.close()
+        #     part = MIMEBase("application", "octet-stream")
+        #     part.set_payload((attachment).read())
+        #     encoders.encode_base64(part)
+        #     part.add_header("Content-Disposition", "attachment; filename= %s" % anexo)
+        #     msg.attach(part)
+        #     attachment.close()
         text = msg.as_string().encode(encoding="latin-1", errors="strict")
 
         """Protocolo & segurança"""
