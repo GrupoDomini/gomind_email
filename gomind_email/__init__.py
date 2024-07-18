@@ -19,7 +19,6 @@ except Exception as e:
 
 
 def enviar_email(
-    file_path,
     msg_mail_to,
     msg_mail_cc="",
     result=True,
