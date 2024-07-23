@@ -9,6 +9,8 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 import smtplib
+from datetime import datetime
+
 
 try:
     from getmac import get_mac_address as gma  # type: ignore
