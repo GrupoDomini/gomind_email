@@ -24,6 +24,7 @@ except Exception as e:
 def enviar_email(
     msg_mail_to,
     msg_mail_cc="",
+    customer_id="",
     result=Literal['start', 'aguarda_analise', 'sucesso', 'erro'],
     RPA="[Robô ainda não identificado]",
 ):
@@ -166,7 +167,7 @@ def enviar_email(
                                         <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 25px; text-align: center;">
                                             Registramos erro durante execução do <b>{RPA}</b>.
                                             <br/>
-                                            Código de Referência: <b style="color: #13B2A3;">gosppt{mac_address}</b>
+                                            Código de Referência: <b style="color: #13B2A3;">{customer_id}</b>
                                         </td>
                                     </tr>
                                     <tr>
