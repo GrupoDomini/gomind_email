@@ -25,6 +25,7 @@ def enviar_email(
     msg_mail_to,
     msg_mail_cc="",
     customer_id="",
+    aguarda_analise=False,
     result=Literal['start', 'aguarda_analise', 'sucesso', 'erro'],
     RPA="[Robô ainda não identificado]",
 ):
@@ -69,7 +70,7 @@ def enviar_email(
         </table>
         """
 
-        aguarda_analise = f"""
+        msg_aguarda = f"""
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
                 <td bgcolor="#e8e8e8" style="padding: 10px 0 10px 0;">
@@ -86,8 +87,7 @@ def enviar_email(
                                     </tr>
                                     <tr>
                                         <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 25px; text-align: center;">
-                                            O <b>{RPA}</b> já coletou os documentos e agora
-                                            <br/>
+                                            O <b>{RPA}</b> já coletou os documentos e agora<br/>
                                             aguarda a sua análise para seguir com o processamento!<br/>
                                             Clique <a style="color: #0D2B5B;" href="https://portalmia.app"><b>aqui</b></a> para acessar a plataforma MIA.
                                         </td>
@@ -199,9 +199,9 @@ def enviar_email(
         elif result == 'start':
             msg["Subject"] = f"Go Mind | Informativo RPA '{RPA}'- Inicializou"
             msg.attach(MIMEText(start, "html"))
-        elif result == 'aguarda_analise':
+        elif result == 'sucesso' and aguarda_analise == True:
             msg["Subject"] = f"Go Mind | Informativo RPA '{RPA}'- Aguardando Análise"
-            msg.attach(MIMEText(aguarda_analise, "html"))
+            msg.attach(MIMEText(msg_aguarda, "html"))
         else:
             msg["Cco"] = "suporte@gomind.com.br"
             msg["Subject"] = f"Go Mind | Informativo RPA '{RPA}'- Erro"
@@ -223,7 +223,7 @@ def enviar_email(
         if result == 'start':
             s.sendmail(msg["From"], msg["To"].split(",") + msg["Cc"].split(","), text)
 
-        elif result == 'aguarda_analise':
+        elif result == 'sucesso' and aguarda_analise == True:
             s.sendmail(
                 msg["From"],
                 msg["To"].split(",") + msg["Cc"].split(","),
