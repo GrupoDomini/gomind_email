@@ -56,7 +56,7 @@ def enviar_email(
                                     <tr>
                                         <td>
                                             <a href="https://www.gomind.com.br">
-                                                <img src="https://github.com/GrupoDomini/Public/blob/main/ASS_MIA.png?raw=true" alt="Go Mind" width="70%" height="auto" style="display: block; margin: auto;" />
+                                                <img src="https://github.com/GrupoDomini/Public/blob/main/ASS_MIA.png?raw=true" alt="Go Mind" width="80%" height="auto" style="display: block; margin: auto;" />
                                             </a>
                                         </td>
                                     </tr>
@@ -95,7 +95,7 @@ def enviar_email(
                                     <tr>
                                         <td>
                                             <a href="https://www.gomind.com.br">
-                                                <img src="https://github.com/GrupoDomini/Public/blob/main/ASS_MIA.png?raw=true" alt="Go Mind" width="70%" height="auto" style="display: block; margin: auto;" />
+                                                <img src="https://github.com/GrupoDomini/Public/blob/main/ASS_MIA.png?raw=true" alt="Go Mind" width="80%" height="auto" style="display: block; margin: auto;" />
                                             </a>
                                         </td>
                                     </tr>
@@ -135,7 +135,7 @@ def enviar_email(
                                     <tr>
                                         <td>
                                             <a href="https://www.gomind.com.br">
-                                                <img src="https://github.com/GrupoDomini/Public/blob/main/ASS_MIA.png?raw=true" alt="Go Mind" width="70%" height="auto" style="display: block; margin: auto;" />
+                                                <img src="https://github.com/GrupoDomini/Public/blob/main/ASS_MIA.png?raw=true" alt="Go Mind" width="80%" height="auto" style="display: block; margin: auto;" />
                                             </a>
                                         </td>
                                     </tr>
@@ -173,7 +173,7 @@ def enviar_email(
                                     <tr>
                                         <td>
                                             <a href="https://www.gomind.com.br">
-                                                <img src="https://github.com/GrupoDomini/Public/blob/main/ASS_MIA.png?raw=true" alt="Go Mind" width="60%" height="auto" style="display: block; margin: auto;" />
+                                                <img src="https://github.com/GrupoDomini/Public/blob/main/ASS_MIA.png?raw=true" alt="Go Mind" width="80%" height="auto" style="display: block; margin: auto;" />
                                             </a>
                                         </td>
                                     </tr>
