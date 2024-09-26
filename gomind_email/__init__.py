@@ -92,8 +92,8 @@ def enviar_email(
                     
                     <p><em style="font-size: 90%;">Por favor, não responda a este e-mail, pois ele é enviado automaticamente.</em></p>
                 """,
-                'img': "https://raw.githubusercontent.com/GrupoDomini/Public/a9e6e32a17c4ab0a59561041c547a0f5303f3b26/head_falha.png",
-                'subject': f"Go Mind | Informativo RPA '{RPA}'- Falha"
+                'img': "https://raw.githubusercontent.com/GrupoDomini/Public/refs/heads/main/Cópia%20de%20head%20(1).png",
+                'subject': f"Go Mind | Informativo RPA '{RPA}'- Não concluído"
                 }
         
         corpo = f"""
